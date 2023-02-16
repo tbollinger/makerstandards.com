@@ -24,7 +24,7 @@ interface ButtonProps {
   children?: ReactNode;
 }
 
-export const Button = ({color = null, size = 'large', label, children, ...props}: ButtonProps) => {
+export const Button = ({color = null, size = 'lg', label, children, ...props}: ButtonProps) => {
 
   const size_classes = (s: string) => {
     switch (s) {
