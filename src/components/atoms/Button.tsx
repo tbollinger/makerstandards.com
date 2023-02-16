@@ -5,7 +5,7 @@ interface ButtonProps {
   /**
    * What kind of button is it?
    */
-  color?: 'sun' | 'ocean' | 'grass' | 'darling' | null;
+  color?: 'sun' | 'ocean' | 'grass' | 'darling';
 
   /**
    * Size large or small
@@ -24,7 +24,8 @@ interface ButtonProps {
   children?: ReactNode;
 }
 
-export const Button = ({color = null, size = 'lg', label, children, ...props}: ButtonProps) => {
+export const Button = ({size = 'lg', color, label, children, ...props}: ButtonProps) => {
+  color = color || 'sun';
 
   const size_classes = (s: string) => {
     switch (s) {
