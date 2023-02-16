@@ -1,6 +1,7 @@
 import {ChevronRightIcon, StarIcon} from '@heroicons/react/20/solid'
 import {Button} from "@/components/atoms/Button";
 import Footer from "@/components/molecules/Footer";
+import Image from "next/image";
 
 const stats = [
   {label: 'Meters Extruded', value: '0'},
@@ -18,7 +19,7 @@ export default function Example() {
           <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:grid lg:max-w-7xl lg:grid-cols-2 lg:gap-24 lg:px-8">
             <div>
               <div>
-                <img
+                <Image
                   className="h-11 w-auto"
                   src="/logo.svg"
                   alt="Maker Standards"
@@ -28,7 +29,7 @@ export default function Example() {
                 <div>
                   <span className="inline-flex space-x-4">
                     <span className="rounded bg-darling-50 px-2.5 py-1 text-sm font-semibold text-darling-500">
-                      What's new
+                      What&apos;s new
                     </span>
                     <span className="inline-flex items-center space-x-1 text-sm font-medium text-darling-500">
                       <span>Filament 1.75mm</span>
@@ -93,7 +94,7 @@ export default function Example() {
                 </svg>
               </div>
               <div className="relative -mr-40 pl-6 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-                <img className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none" src="/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg" alt="Filament spool on top of a 3D Printer"/>
+                <Image className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none" src="/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg" alt="Filament spool on top of a 3D Printer"/>
                 <span className={`text-xs text-gray-400`}>Photo by <a href="https://unsplash.com/@osmantalha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Osman Talha Dikyar</a> on <a href="https://unsplash.com/photos/1MZ9JjAXg1E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
               </div>
             </div>
@@ -119,12 +120,12 @@ export default function Example() {
 
                 {/* Testimonial card*/}
                 <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
-                  <img className="absolute inset-0 h-full w-full object-cover" src="/jean-philippe-delberghe-zxX1iPFhcac-unsplash.jpg" alt="Industrial equipment extruding wires"/>
+                  <Image className="absolute inset-0 h-full w-full object-cover" src="/jean-philippe-delberghe-zxX1iPFhcac-unsplash.jpg" alt="Industrial equipment extruding wires"/>
                   <div className="absolute inset-0 bg-sun-500 mix-blend-multiply"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-sun-600 via-sun-600 opacity-90"/>
                   <div className="relative px-8">
                     <div className={`flex`}>
-                      <img className="h-12 pr-2" src="/logo.svg" alt="Maker Standards logo"/>
+                      <Image className="h-12 pr-2" src="/logo.svg" alt="Maker Standards logo"/>
                       <div className={`h-12 flex items-end text-lg font-mono text-white`}>mk::std</div>
                     </div>
                     <blockquote className="mt-8">
