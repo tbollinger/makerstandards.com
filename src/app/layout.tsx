@@ -1,5 +1,6 @@
+'use client';
 import './globals.css'
-import Navbar from "@/components/molecules/Navbar";
+import {NewsletterProvider} from "@/contexts/NewsletterContext";
 
 export default function RootLayout({
   children,
@@ -12,9 +13,11 @@ export default function RootLayout({
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
-      <head />
+      <head><title>Maker Standards</title></head>
       <body>
-      {children}
+      <NewsletterProvider>
+        {children}
+      </NewsletterProvider>
       </body>
     </html>
   )

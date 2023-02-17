@@ -1,10 +1,6 @@
-import React, {Fragment} from 'react'
-import {Disclosure, Menu, Transition} from '@headlessui/react'
-import {Bars3Icon, BellIcon, XMarkIcon} from '@heroicons/react/24/outline'
-import cn from 'clsx'
-import Link from "next/link";
-import {usePathname} from "next/navigation";
+import React from 'react'
 import {Button} from "@/components/atoms/Button";
+import Image from "next/image";
 
 
 
@@ -23,7 +19,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <a href="/">
               <span className="sr-only">Maker Standards</span>
-              <img className="h-10 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=white" alt="" />
+              <Image className="h-10 w-auto" width={100} height={100} src="/logo.svg" alt="" />
             </a>
             <div className="ml-10 hidden space-x-8 lg:block">
               {navigation.map((link) => (

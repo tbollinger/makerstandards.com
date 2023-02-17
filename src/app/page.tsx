@@ -1,7 +1,7 @@
-import {ChevronRightIcon, StarIcon} from '@heroicons/react/20/solid'
-import {Button} from "@/components/atoms/Button";
+import {ChevronRightIcon} from '@heroicons/react/20/solid'
 import Footer from "@/components/molecules/Footer";
 import Image from "next/image";
+import NewsletterForm from "@/components/molecules/NewsletterForm";
 
 const stats = [
   {label: 'Meters Extruded', value: '0'},
@@ -20,6 +20,8 @@ export default function Example() {
             <div>
               <div>
                 <Image
+                  width={100}
+                  height={100}
                   className="h-11 w-auto"
                   src="/logo.svg"
                   alt="Maker Standards"
@@ -47,35 +49,8 @@ export default function Example() {
                     That&apos;s why we&apos;re creating a filament subscription service that delivers consistent results at a low, low price point.
                   </p>
                 </div>
-                <form action="#" className="mt-12 sm:flex sm:w-full sm:max-w-lg">
-                  <div className="min-w-0 flex-1">
-                    <label htmlFor="hero-email" className="sr-only">
-                      Email address
-                    </label>
-                    <input id="hero-email" type="email" placeholder="Enter your email" className="block h-full w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-darling-500 focus:ring-darling-500"/>
-                  </div>
-                  <div className="mt-4 sm:mt-0 sm:ml-3">
-                    <Button label={`Notify Me`} color={`darling`} size={`xl`}/>
-                    {/*<button type="submit" className="block w-full rounded-md border border-transparent bg-darling-500 px-5 py-3 text-base font-medium text-white shadow hover:bg-darling-600 focus:outline-none focus:ring-2 focus:ring-darling-500 focus:ring-offset-2 sm:px-10">*/}
-                    {/*  Notify me*/}
-                    {/*</button>*/}
-                  </div>
-                </form>
-                {/*<div className="mt-6">*/}
-                {/*  <div className="inline-flex items-center divide-x divide-gray-300">*/}
-                {/*    <div className="flex flex-shrink-0 pr-5">*/}
-                {/*      <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />*/}
-                {/*      <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />*/}
-                {/*      <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />*/}
-                {/*      <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />*/}
-                {/*      <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />*/}
-                {/*    </div>*/}
-                {/*    <div className="min-w-0 flex-1 py-1 pl-5 text-sm text-gray-500 sm:py-3">*/}
-                {/*      <span className="font-medium text-gray-900">Rated 5 stars</span> by over{' '}*/}
-                {/*      <span className="font-medium text-darling-500">500 beta users</span>*/}
-                {/*    </div>*/}
-                {/*  </div>*/}
-                {/*</div>*/}
+                <div className={`mt-12`}>{}</div>
+                <NewsletterForm label={`Notify me`} color={`darling`} />
               </div>
             </div>
           </div>
@@ -94,7 +69,7 @@ export default function Example() {
                 </svg>
               </div>
               <div className="relative -mr-40 pl-6 sm:mx-auto sm:max-w-3xl sm:px-0 lg:h-full lg:max-w-none lg:pl-12">
-                <Image className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none" src="/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg" alt="Filament spool on top of a 3D Printer"/>
+                <Image width={2400} height={1600} className="w-full rounded-md shadow-xl ring-1 ring-black ring-opacity-5 lg:h-full lg:w-auto lg:max-w-none" src="/osman-talha-dikyar-1MZ9JjAXg1E-unsplash.jpg" alt="Filament spool on top of a 3D Printer"/>
                 <span className={`text-xs text-gray-400`}>Photo by <a href="https://unsplash.com/@osmantalha?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Osman Talha Dikyar</a> on <a href="https://unsplash.com/photos/1MZ9JjAXg1E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
               </div>
             </div>
@@ -120,12 +95,12 @@ export default function Example() {
 
                 {/* Testimonial card*/}
                 <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
-                  <Image className="absolute inset-0 h-full w-full object-cover" src="/jean-philippe-delberghe-zxX1iPFhcac-unsplash.jpg" alt="Industrial equipment extruding wires"/>
+                  <Image width={5421} height={3614} className="absolute inset-0 h-full w-full object-cover" src="/jean-philippe-delberghe-zxX1iPFhcac-unsplash.jpg" alt="Industrial equipment extruding wires"/>
                   <div className="absolute inset-0 bg-sun-500 mix-blend-multiply"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-sun-600 via-sun-600 opacity-90"/>
                   <div className="relative px-8">
                     <div className={`flex`}>
-                      <Image className="h-12 pr-2" src="/logo.svg" alt="Maker Standards logo"/>
+                      <Image width={100} height={100} className="h-12 pr-2" src="/logo.svg" alt="Maker Standards logo"/>
                       <div className={`h-12 flex items-end text-lg font-mono text-white`}>mk::std</div>
                     </div>
                     <blockquote className="mt-8">
@@ -239,23 +214,10 @@ export default function Example() {
                     We&apos;re working hard to get ready for launch.
                     Enter your email below to be notified when we&apos;re up and running.
                   </p>
+                  <div className={`mt-12 flex justify-center items-center`}>
+                    <NewsletterForm label={`Notify me`} color={`sun`} />
+                  </div>
                 </div>
-                <form action="#" className="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
-                  <div className="min-w-0 flex-1">
-                    <label htmlFor="cta-email" className="sr-only">
-                      Email address
-                    </label>
-                    <input
-                      id="cta-email"
-                      type="email"
-                      className="block h-full w-full rounded-md border border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-grass-500"
-                      placeholder="Enter your email"
-                    />
-                  </div>
-                  <div className="mt-4 sm:mt-0 sm:ml-3">
-                    <Button label={`Notify me`} size={`xl`} color={`sun`} />
-                  </div>
-                </form>
               </div>
             </div>
           </div>

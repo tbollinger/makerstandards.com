@@ -1,7 +1,7 @@
 import React, {ReactNode} from "react";
 import cn from "clsx";
 
-interface ButtonProps {
+export interface ButtonInterface {
   /**
    * What kind of button is it?
    */
@@ -17,6 +17,8 @@ interface ButtonProps {
    */
   label: string;
 
+  type?: 'button' | 'submit' | 'reset';
+
   /**
    * Optional click handler
    */
@@ -24,7 +26,7 @@ interface ButtonProps {
   children?: ReactNode;
 }
 
-export const Button = ({size = 'lg', color, label, children, ...props}: ButtonProps) => {
+export const Button = ({size = 'lg', color, label, type = 'button', children, ...props}: ButtonInterface) => {
   color = color || 'sun';
 
   const size_classes = (s: string) => {
@@ -54,7 +56,7 @@ export const Button = ({size = 'lg', color, label, children, ...props}: ButtonPr
   }
 
   return (
-    <button {...props} type={`button`} className={cn(
+    <button {...props} type={type} className={cn(
       color_classes(color),
       size_classes(size),
       `border-2 border-black rounded-md text-base font-semibold leading-7 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 inline-flex items-center`
