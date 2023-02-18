@@ -45,8 +45,8 @@ export default function Example() {
                   </h1>
                   <p className="mt-6 text-xl text-gray-500">
                     Sick of bulk ordering the cheapest price filament, praying that it doesn&apos;t suck?
-                    We are too.
-                    That&apos;s why we&apos;re creating a filament subscription service that delivers consistent results at a low, low price point.
+                    Yeah, me too.
+                    That&apos;s why I&apos;m creating a filament subscription service that delivers consistent results at a low, low price point.
                   </p>
                 </div>
                 <div className={`mt-12`}>{}</div>
@@ -109,8 +109,10 @@ export default function Example() {
                           <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
                         </svg>
                         <p className="relative">
-                          I got sick of searching out the best filament deals on the internet, so I made a tool to help me find them.
-                          Then I made a tool to help me make them. I&apos;m a maker at heart, so I wanted to make a product for other makers.
+                          I got sick of searching out filament deals.
+                          Sick of constantly clicking on tricky $10 listings for 50g instead of 1kg.
+                          I was getting lied to, and I was getting tired of it.
+                          My company offers everything at face value, because I&apos;ve been there.
                         </p>
                       </div>
 
@@ -133,12 +135,12 @@ export default function Example() {
                 </h2>
                 <div className="mt-6 space-y-6 text-gray-500">
                   <p className="text-lg">
-                    Filament should be easy to find, easy to buy, and easy to use. We&apos;re here to make that happen.
+                    Filament should be easy to find, easy to buy, and easy to use.
                   </p>
                   <p className="text-base leading-7">
                     You shouldn&apos;t have to spend hours searching for the best deals, comparing Amazon to Aliexpress,
-                    ending up ordering it from some sketchy website, and then waiting a MONTH for it NOT to arrive.
-                    Filament should be: Consistent, Reliable, Affordable, Easy to use, and Knot Free.
+                    ordering it from some sketch site, then waiting a MONTH for it NOT to arrive.
+                    Filament should be: Consistent, Reliable, Affordable, and Knot Free.
                     My mission is to make filament that satisfies all of those things, in that order.
                   </p>
                 </div>
