@@ -4,9 +4,9 @@ import Image from "next/image";
 import NewsletterForm from "@/components/molecules/NewsletterForm";
 
 const stats = [
-  {label: 'Meters Extruded', value: '0'},
+  {label: 'Founded', value: '2023'},
   {label: 'Employees', value: '1'},
-  {label: 'Beta Users', value: '0'},
+  {label: 'Years 3D printing', value: '6'},
   {label: 'Raised', value: '$0'},
 ]
 
@@ -112,12 +112,12 @@ export default function Example() {
                           I got sick of searching out filament deals.
                           Sick of constantly clicking on tricky $10 listings for 50g instead of 1kg.
                           I was getting lied to, and I was getting tired of it.
-                          My company aims to offer everything at face value, because I&apos;ve been there.
+                          My company aims to offer everything at face value, no gimmicks.
                         </p>
                       </div>
 
                       <footer className="mt-4">
-                        <p className="text-base font-semibold text-sun-200">Trenton Bollinger, Owner &amp;&amp; Operator</p>
+                        <p className="text-base font-semibold text-sun-200">Trenton Bollinger, Owner &amp; Operator</p>
                       </footer>
                     </blockquote>
                   </div>
