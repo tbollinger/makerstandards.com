@@ -112,7 +112,7 @@ export default function Example() {
                           I got sick of searching out filament deals.
                           Sick of constantly clicking on tricky $10 listings for 50g instead of 1kg.
                           I was getting lied to, and I was getting tired of it.
-                          My company offers everything at face value, because I&apos;ve been there.
+                          My company aims to offer everything at face value, because I&apos;ve been there.
                         </p>
                       </div>
 
